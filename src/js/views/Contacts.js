@@ -31,7 +31,8 @@ export default class Contacts extends React.Component {
 										store.agenda.map((item, index) => {
 											return (
 												<ContactCard
-													key={this.index}
+													key={index}
+													id={item.id}
 													name={item.full_name}
 													email={item.email}
 													phone={item.phone}
