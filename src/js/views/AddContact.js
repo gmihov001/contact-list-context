@@ -71,12 +71,13 @@ export default class AddContact extends React.Component {
 											}
 											type="button"
 											className="btn btn-primary form-control"
-											disabled={
-												!this.state.name &&
-												!this.state.address &&
-												!this.state.phone &&
-												!this.state.email
-											}>
+											//disabled={
+											//	!this.state.name &&
+											//	!this.state.address &&
+											//	!this.state.phone &&
+											//	!this.state.email
+											//}
+										>
 											SAVE
 										</button>
 									</Link>

@@ -2,15 +2,7 @@ const getState = ({ getStore, setStore }) => {
 	return {
 		store: {
 			contact: [],
-			contacts: [
-				{
-					full_name: "George Bradley",
-					email: "dave@gmail.com",
-					agenda_slug: "my_super_agenda",
-					address: "47568 NW 34ST, 33434 FL, USA",
-					phone: "7864445566"
-				}
-			]
+			agenda: []
 			//Your data structures, A.K.A Entities
 		},
 		actions: {
