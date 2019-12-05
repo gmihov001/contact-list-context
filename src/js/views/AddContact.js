@@ -22,6 +22,9 @@ export default class AddContact extends React.Component {
 						<div className="container">
 							<div>
 								<h1 className="text-center mt-5">Add a new contact</h1>
+								<div>
+									{this.state.name} , {this.state.address} , {this.state.phone} , {this.state.email}
+								</div>
 								<form>
 									<div className="form-group">
 										<label>Full Name</label>
@@ -71,18 +74,20 @@ export default class AddContact extends React.Component {
 											}
 											type="button"
 											className="btn btn-primary form-control"
-											//disabled={
-											//	!this.state.name &&
-											//	!this.state.address &&
-											//	!this.state.phone &&
-											//	!this.state.email
-											//}
+											disabled={
+												!this.state.name &&
+												!this.state.address &&
+												!this.state.phone &&
+												!this.state.email
+											}
 										>
 											SAVE
 										</button>
 									</Link>
-									<Link className="mt-3 w-100 text-center" to="/">
-										or Get back to contacts
+									<Link to="/">
+										<button type="button" className="mt-3 py-2 w-100 text-center bg-warning rounded shadow-sm">
+											Go back to Contacts
+										</button>
 									</Link>
 								</form>
 							</div>
